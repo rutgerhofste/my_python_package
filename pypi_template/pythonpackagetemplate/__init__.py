@@ -10,7 +10,5 @@ def a_function(foo):
         bar (integer) : bar
 
     """
-    bar = foo + 1
-    return bar
-
+    return 1
 
