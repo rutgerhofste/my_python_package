@@ -11,4 +11,3 @@ def a_function(foo):
 
     """
     return 1
-
