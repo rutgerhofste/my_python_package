@@ -25,10 +25,8 @@ https://pypi.org/account/register/
 [install-requires-vs-requirements](https://packaging.python.org/discussions/install-requires-vs-requirements/#install-requires-vs-requirements-files)
 
 
-1. Create a repository.
-1. Copy files from template folder of this repor to home of your repo.
-1. Rename folders to yourname_python_package
-1. Replace rutgerhofste in setup.py with your package name. 
+1. Fork and clone this repository to your (virtual) machine.  
+1. Rename folders to a newname that is unique to pypi and conda cloud.
 1. cd to repo (folder with setup.py)
 1. cp -r pypi_template pypi_template_built
 1. cp -r conda_template conda_template_built
