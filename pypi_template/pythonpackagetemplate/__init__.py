@@ -1,13 +1,13 @@
 import pandas as pd
 
 def a_function(foo):
-	""" A function
+    """ A function
 
-	Args:
-		foo (integer) : foo
+    Args:
+        foo (integer) : foo
 
-	Returns:
-		bar (integer) : bar
+    Returns:
+        bar (integer) : bar
 
     """
     bar = foo + 1
