@@ -1,0 +1,44 @@
+{% set name = "pythonpackagetemplate" %}
+{% set version = "0.1.4" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "656d250c20dada62d0430eab649e89818f372d9b24f41d8d59d4ce8e73a2aead" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - pandas
+  run:
+    - python
+    - pandas
+
+test:
+  imports:
+    - pythonpackagetemplate
+
+about:
+  home: http://github.com/rutgerhofste/python_package_template
+  license: MIT
+  license_family: MIT
+  license_file: ''
+  summary: Test python package with documentation and CI
+  description: ''
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''
