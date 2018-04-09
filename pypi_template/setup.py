@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pythonpackagetemplate',
-      version='0.1.3',
+      version='0.1.5',
       description='Test python package with documentation and CI',
       url='http://github.com/rutgerhofste/python_package_template',
       author='Rutger Hofste',
